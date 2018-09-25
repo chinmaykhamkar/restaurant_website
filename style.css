@@ -1,0 +1,48 @@
+nav{
+    
+    position: fixed;
+    background-color:transparent;
+    padding: 0px 20px;
+    
+}
+section{
+    background-image: url(main_pizza.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    
+      }
+
+#brandlogo{
+    width: 80px;
+    border-radius: 10px;
+}
+
+.box{
+      margin-top: 20px;
+      height: 1000px;
+    background-color: green;
+    }
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: -4px;
+  background: white;
+  height: 3px;
+  transition-property: left right;
+  transition-duration: 0.5s;
+  transition-timing-function:ease-in-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  right: 0;
+}
